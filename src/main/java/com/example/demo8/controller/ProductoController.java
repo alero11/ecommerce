@@ -42,6 +42,8 @@ public class ProductoController {
     @PutMapping("/actualizar/{id}")
     public void actualizar2metodo(@PathVariable Integer id,
             @RequestBody Producto producto) {
+
+
         iProductoService.actualizarPorId(id,producto);
     }
 
