@@ -1,18 +1,11 @@
-package com.example.demo8.entity;
+package com.example.demo8.dto;
 
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
-
 @Getter
 @Setter
-@Entity
-@Table(name = "producto")
-public class Producto {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class ProductoDto {
     private Integer idProducto;
     private String nombreProducto;
     private String descripcion;
